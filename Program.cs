@@ -20,7 +20,7 @@ namespace Functions
       {
          Console.WriteLine("--------------------------------------------");
          Console.WriteLine("Возведение натурального числа А в степень B");
-         Console.WriteLine(" --------------------------------------------------------------------------------------------- ");
+         Console.WriteLine(" --------------------------------------------");
 
          Console.WriteLine("Введите натуральные числа А и В ");
          int A = Convert.ToInt32(Console.ReadLine());
