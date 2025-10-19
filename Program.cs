@@ -18,9 +18,9 @@ namespace Functions
    {
       static void Main()
       {
-         Console.WriteLine("-------------------------------------------");
-         Console.WriteLine("Возведение натурального числа А в степень B");
-         Console.WriteLine("-------------------------------------------");
+         Console.WriteLine("--------------------------------------------");
+         Console.WriteLine(" Возведение натурального числа А в степень B");
+         Console.WriteLine("--------------------------------------------");
          Console.Write("Введите натуральное число А: ");
          int A = Convert.ToInt32(Console.ReadLine());
          Console.Write("Введите натуральное число B: ");
