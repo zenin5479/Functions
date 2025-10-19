@@ -21,9 +21,9 @@ namespace Functions
          Console.WriteLine("-------------------------------------------");
          Console.WriteLine("Возведение натурального числа А в степень B");
          Console.WriteLine("-------------------------------------------");
-         Console.WriteLine("Введите натуральное число А: ");
+         Console.Write("Введите натуральное число А: ");
          int A = Convert.ToInt32(Console.ReadLine());
-         Console.WriteLine("Введите натуральное число B: ");
+         Console.Write("Введите натуральное число B: ");
          int B = Convert.ToInt32(Console.ReadLine());
          int i = 1;
          int St = 1;
@@ -32,11 +32,11 @@ namespace Functions
             St = St * A;
             i++;
          }
-         Console.WriteLine(A + "  в степени " + B + " = " + St);
+         Console.WriteLine(A + " в степени " + B + " = " + St);
 
-         Console.WriteLine(" --------------------------------------------------------------------------------------------- ");
-         Console.WriteLine(" Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.");
-         Console.WriteLine(" --------------------------------------------------------------------------------------------- ");
+         Console.WriteLine("-------------------------------------------------------------------------------");
+         Console.WriteLine("Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе");
+         Console.WriteLine("-------------------------------------------------------------------------------");
 
          Console.WriteLine("Введите число N ");
          int N = Convert.ToInt32(Console.ReadLine());
