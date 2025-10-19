@@ -21,9 +21,9 @@ namespace Functions
          Console.WriteLine("-------------------------------------------");
          Console.WriteLine("Возведение натурального числа А в степень B");
          Console.WriteLine("-------------------------------------------");
-         Console.WriteLine("Введите натуральное число А:");
+         Console.WriteLine("Введите натуральное число А: ");
          int A = Convert.ToInt32(Console.ReadLine());
-         Console.WriteLine("Введите натуральное число B:");
+         Console.WriteLine("Введите натуральное число B: ");
          int B = Convert.ToInt32(Console.ReadLine());
          int i = 1;
          int St = 1;
