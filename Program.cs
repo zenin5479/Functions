@@ -102,15 +102,12 @@ namespace Functions
                array[i] = array[minPosition];
                array[minPosition] = temporary;
             }
-
          }
 
          SelectionSort(array);
          Console.WriteLine("------------------------------------------------------");
          Console.WriteLine("отсортированный по модулю от минимального к максимальному");
          PrintArray(array);
-
-
 
          // Дополнительные задания
 
@@ -145,11 +142,8 @@ namespace Functions
             else
                Console.WriteLine("десятичное число " + num + " = двоичному числу " + DvFigura2 + " - не полиндром");
          }
+
          Dvcod(number);
-
-
-
-
 
          Console.WriteLine(" --------------------------------------------------------------------------------------------- ");
          Console.WriteLine(" Задача 3. Массив на 100 элементов задается случайными числамит от 1 до 99. Определите самый часто встречающиййся элемент в массиве. Если их несколько - вывести все.");
@@ -191,7 +185,6 @@ namespace Functions
                {
                   Console.WriteLine("макс кол элементов массива c знвчением " + arrayN[i] + " =  " + kolMax);
                }
-
             }
          }
 
