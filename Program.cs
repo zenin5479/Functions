@@ -52,7 +52,6 @@ namespace Functions
             arr[j] = temp;
          }
 
-
          Console.WriteLine("-------------------------------------------");
          Console.WriteLine("Возведение натурального числа А в степень B");
          Console.WriteLine("-------------------------------------------");
@@ -222,7 +221,5 @@ namespace Functions
 
          Console.ReadKey();
       }
-
-      
    }
 }
