@@ -41,7 +41,6 @@ namespace Functions
          }
 
          // Перемешиваем массив для случайного порядка
-
          for (int rz = arr.Length - 1; rz >= 1; rz--)
          {
             int j = random.Next(rz + 1);
