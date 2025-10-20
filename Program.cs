@@ -146,14 +146,14 @@ namespace Functions
 
          Console.WriteLine("Введите десятичное число ");
          int number = Convert.ToInt32(Console.ReadLine());
-         void Dvcod(int number)                                       // метод перевода десятичного числа в двоичный
+         void Dvcod(int figure)                                       // метод перевода десятичного числа в двоичный
          {
-            int num = number;
+            int num = figure;
             string DvFigura1 = "";
-            while (number >= 1)
+            while (figure >= 1)
             {
-               DvFigura1 = DvFigura1 + Convert.ToString(number % 2);
-               number = number / 2;
+               DvFigura1 = DvFigura1 + Convert.ToString(figure % 2);
+               figure = figure / 2;
             }
             int L = DvFigura1.Length;
             char[] sDvFigura = DvFigura1.ToCharArray();                     // преобразовать строку в символьный массив, затем выполнить реверсирование массива и этот массив преобразовать в строку.
@@ -167,9 +167,13 @@ namespace Functions
             string DvFigura2 = new string(sDvFigura1);
 
             if (DvFigura1 == DvFigura2)
+            {
                Console.WriteLine("десятичное число " + num + " = двоичному числу " + DvFigura2 + " - полиндром");
+            }
             else
+            {
                Console.WriteLine("десятичное число " + num + " = двоичному числу " + DvFigura2 + " - не полиндром");
+            }
          }
 
          Dvcod(number);
