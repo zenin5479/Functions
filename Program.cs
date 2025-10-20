@@ -205,7 +205,8 @@ namespace Functions
 
       public static int[] GenerateArray()
       {
-         int k = random.Next(1, 101); // Количество единиц (от 1 до 100)
+         // Количество единиц (от 1 до 100)
+         int k = random.Next(1, 101); 
          int n = k * k; // Размер массива
          int[] array = new int[n];
 
