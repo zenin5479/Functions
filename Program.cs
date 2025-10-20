@@ -94,22 +94,22 @@ namespace Functions
          int[] array = new int[8];
          MethodFillArray(array, value1, value2);
 
-         void MethodFillArray(int[] array, int value_1, int value_2)                         // метод заполнения массива случайными числами
+         void MethodFillArray(int[] arrays, int value_1, int value_2)                         // метод заполнения массива случайными числами
          {
             int index = 0;
-            while (index < array.Length)
+            while (index < arrays.Length)
             {
-               array[index] = new Random().Next(value_1, value_2);
+               arrays[index] = new Random().Next(value_1, value_2);
                index++;
             }
          }
 
-         void PrintArray(int[] array)                                // метод распечатки элементов массива
+         void PrintArray(int[] arra)                                // метод распечатки элементов массива
          {
-            int count = array.Length;
-            for (int i = 0; i < count; i++)
+            int length = arra.Length;
+            for (int rv = 0; rv < length; rv++)
             {
-               Console.Write($"{array[i]}  ");
+               Console.Write($"{arra[rv]}  ");
             }
             Console.WriteLine();
          }
@@ -117,20 +117,20 @@ namespace Functions
          Console.WriteLine("исходный массив");
          PrintArray(array);
 
-         void SelectionSort(int[] array)                         // метод сортировки элементов массива от мин значения к максимальному по модулю
+         void SelectionSort(int[] ar)                         // метод сортировки элементов массива от мин значения к максимальному по модулю
          {
-            for (int i = 0; i < array.Length - 1; i++)
+            for (int px = 0; px < ar.Length - 1; px++)
             {
-               int minPosition = i;
+               int minPosition = px;
 
-               for (int j = i + 1; j < array.Length; j++)
+               for (int j = px + 1; j < ar.Length; j++)
                {
-                  if (Math.Abs(array[j]) < Math.Abs(array[minPosition])) minPosition = j;
+                  if (Math.Abs(ar[j]) < Math.Abs(ar[minPosition])) minPosition = j;
                }
 
-               int temporary = array[i];
-               array[i] = array[minPosition];
-               array[minPosition] = temporary;
+               int temporary = ar[px];
+               ar[px] = ar[minPosition];
+               ar[minPosition] = temporary;
             }
          }
 
@@ -192,29 +192,29 @@ namespace Functions
             int L = arrayN.Length;
             int kolMax = 1;
             int numArray = arrayN[0];
-
             for (int rd = 0; rd < L - 1; rd++)
             {
-               int count = 1;
+               int max = 1;
                for (int j = rd + 1; j < L; j++)
                {
-                  if (arrayN[rd] == (arrayN[j])) count++;
+                  if (arrayN[rd] == (arrayN[j])) max++;
                }
-               if (count > kolMax)
+
+               if (max > kolMax)
                {
-                  kolMax = count;
+                  kolMax = max;
                   numArray = arrayN[rd];
                }
             }
 
             for (int sr = 0; sr < L - 1; sr++)
             {
-               int count = 1;
+               int counter = 1;
                for (int j = sr + 1; j < L; j++)
                {
-                  if (arrayN[sr] == (arrayN[j])) count++;
+                  if (arrayN[sr] == (arrayN[j])) counter++;
                }
-               if (count == kolMax)
+               if (counter == kolMax)
                {
                   Console.WriteLine("макс кол элементов массива c знвчением " + arrayN[sr] + " =  " + kolMax);
                }
