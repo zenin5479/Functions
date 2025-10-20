@@ -23,7 +23,7 @@ namespace Functions
 {
    internal class Program
    {
-      private static readonly
+
 
       static void Main()
       {
