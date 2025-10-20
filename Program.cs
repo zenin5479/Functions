@@ -16,6 +16,8 @@ namespace Functions
 {
    internal class Program
    {
+      private static readonly Random random = new Random();
+
       static void Main()
       {
          // Задача: Напишите метод, который заполняет массив случайным количеством (от 1 до 100) нулей и единиц
@@ -193,5 +195,7 @@ namespace Functions
 
          Console.ReadKey();
       }
+
+
    }
 }
