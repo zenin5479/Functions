@@ -159,10 +159,10 @@ namespace Functions
             char[] sDvFigura = DvFigura1.ToCharArray();                     // преобразовать строку в символьный массив, затем выполнить реверсирование массива и этот массив преобразовать в строку.
             char[] sDvFigura1 = new char[L];                     // символьный массив для перевернутого числа
             int j = L;
-            for (int i = 0; i < L; i++)                         // цикл для переворота числа 
+            for (int lx = 0; lx < L; lx++)                         // цикл для переворота числа 
             {
                j = j - 1;
-               sDvFigura1[j] = sDvFigura[i];
+               sDvFigura1[j] = sDvFigura[lx];
             }
             string DvFigura2 = new string(sDvFigura1);
 
@@ -193,30 +193,30 @@ namespace Functions
             int kolMax = 1;
             int numArray = arrayN[0];
 
-            for (int i = 0; i < L - 1; i++)
+            for (int rd = 0; rd < L - 1; rd++)
             {
                int count = 1;
-               for (int j = i + 1; j < L; j++)
+               for (int j = rd + 1; j < L; j++)
                {
-                  if (arrayN[i] == (arrayN[j])) count++;
+                  if (arrayN[rd] == (arrayN[j])) count++;
                }
                if (count > kolMax)
                {
                   kolMax = count;
-                  numArray = arrayN[i];
+                  numArray = arrayN[rd];
                }
             }
 
-            for (int i = 0; i < L - 1; i++)
+            for (int sr = 0; sr < L - 1; sr++)
             {
                int count = 1;
-               for (int j = i + 1; j < L; j++)
+               for (int j = sr + 1; j < L; j++)
                {
-                  if (arrayN[i] == (arrayN[j])) count++;
+                  if (arrayN[sr] == (arrayN[j])) count++;
                }
                if (count == kolMax)
                {
-                  Console.WriteLine("макс кол элементов массива c знвчением " + arrayN[i] + " =  " + kolMax);
+                  Console.WriteLine("макс кол элементов массива c знвчением " + arrayN[sr] + " =  " + kolMax);
                }
             }
          }
