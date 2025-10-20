@@ -23,13 +23,15 @@ namespace Functions
 {
    internal class Program
    {
-      private static readonly Random random = new Random();
+      private static readonly
 
       static void Main()
       {
          // Задача: Напишите метод, который заполняет массив случайным количеством (от 1 до 100) нулей и единиц
          // Размер массива должен совпадать с квадратом количества единиц в нём
          // Количество единиц (от 1 до 100)
+         Random random = new Random();
+
          int k = random.Next(1, 101);
          // Размер массива
          int n = k * k;
