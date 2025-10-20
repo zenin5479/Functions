@@ -196,6 +196,34 @@ namespace Functions
          Console.ReadKey();
       }
 
+      public static int[] GenerateArray()
+      {
+         int k = random.Next(1, 101); // Количество единиц (от 1 до 100)
+         int n = k * k; // Размер массива
+         int[] array = new int[n];
 
+         // Заполняем массив k единицами и остальными нулями
+         for (int i = 0; i < k; i++)
+         {
+            array[i] = 1;
+         }
+
+         // Перемешиваем массив для случайного порядка
+         Shuffle(array);
+
+         return array;
+      }
+
+      private static void Shuffle(int[] array)
+      {
+         for (int i = array.Length - 1; i >= 1; i--)
+         {
+            int j = random.Next(i + 1);
+            // Обмен элементов
+            int temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+         }
+      }
    }
 }
