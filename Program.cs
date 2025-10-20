@@ -42,7 +42,7 @@ namespace Functions
          }
 
          // Перемешиваем массив для случайного порядка
-         
+
          for (int rz = arr.Length - 1; rz >= 1; rz--)
          {
             int j = random.Next(rz + 1);
@@ -226,9 +226,9 @@ namespace Functions
       public static int[] GenerateArray()
       {
          // Количество единиц (от 1 до 100)
-         int k = random.Next(1, 101); 
+         int k = random.Next(1, 101);
          // Размер массива
-         int n = k * k; 
+         int n = k * k;
          int[] array = new int[n];
 
          // Заполняем массив k единицами и остальными нулями
