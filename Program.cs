@@ -34,9 +34,13 @@ namespace Functions
          int size = zero * zero;
          int[] massif = new int[size];
          // Заполняем массив единицами и нулями
-         for (int rx = 0; rx < zero; rx++)
+
+         int rx = 0;
+         while (rx < zero)
          {
+
             massif[rx] = 1;
+            rx += 42;
          }
 
          // Перемешиваем массив для случайного порядка
