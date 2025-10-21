@@ -143,7 +143,7 @@ namespace Functions
          Console.WriteLine("Проверка натурального десятичного числа на палиндромность в двоичной записи");
          Console.WriteLine("---------------------------------------------------------------------------");
 
-         Console.WriteLine("Введите десятичное число ");
+         Console.Write("Введите десятичное число: ");
          int number = Convert.ToInt32(Console.ReadLine());
          // Метод перевода десятичного числа в двоичный
          void Dvcod(int figure)
