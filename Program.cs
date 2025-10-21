@@ -31,22 +31,22 @@ namespace Functions
          Random сhance = new Random();
          int zero = сhance.Next(1, 101);
          // Размер массива
-         int n = zero * zero;
-         int[] arr = new int[n];
+         int size = zero * zero;
+         int[] massif = new int[size];
          // Заполняем массив k единицами и остальными нулями
          for (int rx = 0; rx < zero; rx++)
          {
-            arr[rx] = 1;
+            massif[rx] = 1;
          }
 
          // Перемешиваем массив для случайного порядка
-         for (int rz = arr.Length - 1; rz >= 1; rz--)
+         for (int rz = massif.Length - 1; rz >= 1; rz--)
          {
             int j = сhance.Next(rz + 1);
             // Обмен элементов
-            int temp = arr[rz];
-            arr[rz] = arr[j];
-            arr[j] = temp;
+            int temp = massif[rz];
+            massif[rz] = massif[j];
+            massif[j] = temp;
          }
 
          Console.WriteLine("-------------------------------------------");
@@ -60,7 +60,7 @@ namespace Functions
          int St = 1;
          while (i <= B)
          {
-            St = St * A;
+            St *= A;
             i++;
          }
          Console.WriteLine("Число " + A + " в степени " + B + " = " + St);
