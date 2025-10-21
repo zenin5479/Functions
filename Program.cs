@@ -33,7 +33,7 @@ namespace Functions
          // Размер массива
          int size = zero * zero;
          int[] massif = new int[size];
-         // Заполняем массив k единицами и остальными нулями
+         // Заполняем массив единицами и нулями
          for (int rx = 0; rx < zero; rx++)
          {
             massif[rx] = 1;
