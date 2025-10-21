@@ -221,7 +221,7 @@ namespace Functions
                }
                if (counter == kolMax)
                {
-                  Console.WriteLine("Макс количество элементов массива c знвчением " + arrayN[sr] + " =  " + kolMax);
+                  Console.WriteLine("Максимальное количество элементов массива c знвчением " + arrayN[sr] + " =  " + kolMax);
                }
             }
          }
