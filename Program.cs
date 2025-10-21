@@ -145,7 +145,8 @@ namespace Functions
 
          Console.WriteLine("Введите десятичное число ");
          int number = Convert.ToInt32(Console.ReadLine());
-         void Dvcod(int figure)                                       // метод перевода десятичного числа в двоичный
+         // Метод перевода десятичного числа в двоичный
+         void Dvcod(int figure)
          {
             int num = figure;
             string DvFigura1 = "";
@@ -155,8 +156,10 @@ namespace Functions
                figure = figure / 2;
             }
             int L = DvFigura1.Length;
-            char[] sDvFigura = DvFigura1.ToCharArray();                     // преобразовать строку в символьный массив, затем выполнить реверсирование массива и этот массив преобразовать в строку.
-            char[] sDvFigura1 = new char[L];                     // символьный массив для перевернутого числа
+            // Преобразовать строку в символьный массив, затем выполнить реверсирование массива и этот массив преобразовать в строку.
+            char[] sDvFigura = DvFigura1.ToCharArray();
+            // Символьный массив для перевернутого числа
+            char[] sDvFigura1 = new char[L];                     
             int j = L;
             for (int lx = 0; lx < L; lx++)                         // цикл для переворота числа 
             {
@@ -167,7 +170,7 @@ namespace Functions
 
             if (DvFigura1 == DvFigura2)
             {
-               Console.WriteLine("десятичное число " + num + " = двоичному числу " + DvFigura2 + " - полиндром");
+               Console.WriteLine("Десятичное число " + num + " = двоичному числу " + DvFigura2 + " - полиндром");
             }
             else
             {
