@@ -188,9 +188,11 @@ namespace Functions
          int[] array1 = new int[100];
          // Метод заполнение массива
          MethodFillArray(array1, value1, value2);
-         PrintArray(array1);                                // метод распечатки массивыа выше прописан
+         // Метод распечатки массивыа выше прописан
+         PrintArray(array1);
          Selectionnum(array1);
-         void Selectionnum(int[] arrayN)                         // метод сортировки элементов массива от мин значения к максимальному по модулю
+         // Метод сортировки элементов массива от мин значения к максимальному по модулю
+         void Selectionnum(int[] arrayN)
          {
             int L = arrayN.Length;
             int kolMax = 1;
@@ -219,7 +221,7 @@ namespace Functions
                }
                if (counter == kolMax)
                {
-                  Console.WriteLine("макс кол элементов массива c знвчением " + arrayN[sr] + " =  " + kolMax);
+                  Console.WriteLine("Макс количество элементов массива c знвчением " + arrayN[sr] + " =  " + kolMax);
                }
             }
          }
