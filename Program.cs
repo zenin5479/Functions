@@ -117,7 +117,7 @@ namespace Functions
 
          Console.WriteLine("Исходный массив");
          PrintArray(array);
-         // Метод сортировки элементов массива от мин значения к максимальному по модулю
+         // Метод сортировки элементов массива от минимального значения к максимальному по модулю
          void SelectionSort(int[] ar)
          {
             for (int px = 0; px < ar.Length - 1; px++)
