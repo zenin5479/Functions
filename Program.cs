@@ -33,7 +33,6 @@ namespace Functions
          // Размер массива
          int n = k * k;
          int[] arr = new int[n];
-
          // Заполняем массив k единицами и остальными нулями
          for (int rx = 0; rx < k; rx++)
          {
