@@ -28,8 +28,8 @@ namespace Functions
          // Задача: Напишите метод, который заполняет массив случайным количеством (от 1 до 100) нулей и единиц
          // Размер массива должен совпадать с квадратом количества единиц в нём
          // Количество единиц (от 1 до 100)
-         Random random = new Random();
-         int k = random.Next(1, 101);
+         Random сhance = new Random();
+         int k = сhance.Next(1, 101);
          // Размер массива
          int n = k * k;
          int[] arr = new int[n];
@@ -43,7 +43,7 @@ namespace Functions
          // Перемешиваем массив для случайного порядка
          for (int rz = arr.Length - 1; rz >= 1; rz--)
          {
-            int j = random.Next(rz + 1);
+            int j = сhance.Next(rz + 1);
             // Обмен элементов
             int temp = arr[rz];
             arr[rz] = arr[j];
