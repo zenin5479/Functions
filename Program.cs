@@ -86,7 +86,7 @@ namespace Functions
 
          Console.WriteLine("--------------------------------------------------------");
          Console.WriteLine("Вывод массива случайных чисел отсортированного по модулю");
-         Console.WriteLine("--------------------------------------------------------------------------------------------- ");
+         Console.WriteLine("--------------------------------------------------------");
          Console.WriteLine("введите диапозон случайных чисел ");
          int value1 = Convert.ToInt32(Console.ReadLine());
          int value2 = Convert.ToInt32(Console.ReadLine());
