@@ -93,8 +93,8 @@ namespace Functions
 
          int[] array = new int[8];
          MethodFillArray(array, value1, value2);
-
-         void MethodFillArray(int[] arrays, int value_1, int value_2)                         // метод заполнения массива случайными числами
+         // метод заполнения массива случайными числами
+         void MethodFillArray(int[] arrays, int value_1, int value_2)
          {
             int index = 0;
             while (index < arrays.Length)
@@ -103,8 +103,8 @@ namespace Functions
                index++;
             }
          }
-
-         void PrintArray(int[] arra)                                // метод распечатки элементов массива
+         // Метод распечатки элементов массива
+         void PrintArray(int[] arra)
          {
             int length = arra.Length;
             for (int rv = 0; rv < length; rv++)
