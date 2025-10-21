@@ -67,10 +67,10 @@ namespace Functions
          Console.WriteLine("Число " + A + " в степени " + B + " = " + St);
 
          Console.WriteLine("-------------------------------------------------------------------------------");
-         Console.WriteLine("Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе");
+         Console.WriteLine("Сумма цифр целого числа");
          Console.WriteLine("-------------------------------------------------------------------------------");
 
-         Console.WriteLine("Введите число N ");
+         Console.WriteLine("Введите число N: ");
          int N = Convert.ToInt32(Console.ReadLine());
          int Sum = Math.Abs(N);
          int count = 0;
