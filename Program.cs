@@ -29,12 +29,12 @@ namespace Functions
          // Размер массива должен совпадать с квадратом количества единиц в нём
          // Количество единиц (от 1 до 100)
          Random сhance = new Random();
-         int k = сhance.Next(1, 101);
+         int zero = сhance.Next(1, 101);
          // Размер массива
-         int n = k * k;
+         int n = zero * zero;
          int[] arr = new int[n];
          // Заполняем массив k единицами и остальными нулями
-         for (int rx = 0; rx < k; rx++)
+         for (int rx = 0; rx < zero; rx++)
          {
             arr[rx] = 1;
          }
