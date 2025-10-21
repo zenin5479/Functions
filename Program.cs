@@ -159,7 +159,7 @@ namespace Functions
             // Преобразовать строку в символьный массив, затем выполнить реверсирование массива и этот массив преобразовать в строку.
             char[] sDvFigura = DvFigura1.ToCharArray();
             // Символьный массив для перевернутого числа
-            char[] sDvFigura1 = new char[L];                     
+            char[] sDvFigura1 = new char[L];
             int j = L;
             for (int lx = 0; lx < L; lx++)                         // цикл для переворота числа 
             {
@@ -186,7 +186,8 @@ namespace Functions
          value1 = 1;
          value2 = 99;
          int[] array1 = new int[100];
-         MethodFillArray(array1, value1, value2);          // метод заполнение массива (выше прописан)
+         // Метод заполнение массива
+         MethodFillArray(array1, value1, value2);
          PrintArray(array1);                                // метод распечатки массивыа выше прописан
          Selectionnum(array1);
          void Selectionnum(int[] arrayN)                         // метод сортировки элементов массива от мин значения к максимальному по модулю
