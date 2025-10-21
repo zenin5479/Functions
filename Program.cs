@@ -68,7 +68,7 @@ namespace Functions
 
          Console.WriteLine("-----------------------");
          Console.WriteLine("Сумма цифр целого числа");
-         Console.WriteLine("-------------------------------------------------------------------------------");
+         Console.WriteLine("-----------------------");
 
          Console.WriteLine("Введите число N: ");
          int N = Convert.ToInt32(Console.ReadLine());
