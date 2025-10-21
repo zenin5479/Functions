@@ -91,7 +91,6 @@ namespace Functions
          int value1 = Convert.ToInt32(Console.ReadLine());
          Console.WriteLine("Введите верхнюю границу диапозона случайных чисел: ");
          int value2 = Convert.ToInt32(Console.ReadLine());
-
          int[] array = new int[8];
          MethodFillArray(array, value1, value2);
          // Метод заполнения массива случайными числами
