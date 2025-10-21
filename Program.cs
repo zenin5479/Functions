@@ -36,11 +36,12 @@ namespace Functions
          // Заполняем массив единицами и нулями
 
          int rx = 0;
-         while (rx < zero)
+         while (rx < size)
          {
 
             massif[rx] = 1;
-            rx += 42;
+            rx += zero;
+            Console.WriteLine(massif[rx]);
          }
 
          // Перемешиваем массив для случайного порядка
