@@ -40,7 +40,6 @@ namespace Functions
          {
             massif[rx] = 1;
             rx += zero;
-            Console.WriteLine(massif[rx]);
          }
 
          // Перемешиваем массив для случайного порядка
