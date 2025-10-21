@@ -136,8 +136,7 @@ namespace Functions
          }
 
          SelectionSort(array);
-         Console.WriteLine("------------------------------------------------------");
-         Console.WriteLine("отсортированный по модулю от минимального к максимальному");
+         Console.WriteLine("Отсортированный по модулю от минимального к максимальному");
          PrintArray(array);
 
          // Дополнительные задания
