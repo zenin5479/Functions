@@ -38,7 +38,6 @@ namespace Functions
          int rx = 0;
          while (rx < size)
          {
-
             massif[rx] = 1;
             rx += zero;
             Console.WriteLine(massif[rx]);
