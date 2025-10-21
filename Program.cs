@@ -93,7 +93,7 @@ namespace Functions
 
          int[] array = new int[8];
          MethodFillArray(array, value1, value2);
-         // метод заполнения массива случайными числами
+         // Метод заполнения массива случайными числами
          void MethodFillArray(int[] arrays, int value_1, int value_2)
          {
             int index = 0;
@@ -103,6 +103,7 @@ namespace Functions
                index++;
             }
          }
+
          // Метод распечатки элементов массива
          void PrintArray(int[] arra)
          {
@@ -114,10 +115,10 @@ namespace Functions
             Console.WriteLine();
          }
 
-         Console.WriteLine("исходный массив");
+         Console.WriteLine("Исходный массив");
          PrintArray(array);
-
-         void SelectionSort(int[] ar)                         // метод сортировки элементов массива от мин значения к максимальному по модулю
+         // Метод сортировки элементов массива от мин значения к максимальному по модулю
+         void SelectionSort(int[] ar)
          {
             for (int px = 0; px < ar.Length - 1; px++)
             {
