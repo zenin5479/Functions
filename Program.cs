@@ -199,13 +199,13 @@ namespace Functions
          // Метод сортировки элементов массива от минимального значения к максимальному по модулю
          void Selectionnum(int[] arrayN)
          {
-            int L = arrayN.Length;
+            int l = arrayN.Length;
             int kolMax = 1;
             int numArray = arrayN[0];
-            for (int rd = 0; rd < L - 1; rd++)
+            for (int rd = 0; rd < l - 1; rd++)
             {
                int max = 1;
-               for (int j = rd + 1; j < L; j++)
+               for (int j = rd + 1; j < l; j++)
                {
                   if (arrayN[rd] == (arrayN[j])) max++;
                }
@@ -217,10 +217,10 @@ namespace Functions
                }
             }
 
-            for (int sr = 0; sr < L - 1; sr++)
+            for (int sr = 0; sr < l - 1; sr++)
             {
                int counter = 1;
-               for (int j = sr + 1; j < L; j++)
+               for (int j = sr + 1; j < l; j++)
                {
                   if (arrayN[sr] == (arrayN[j])) counter++;
                }
