@@ -153,15 +153,15 @@ namespace Functions
          void Dvcod(int figure)
          {
             int num = figure;
-            string DvFigura1 = "";
+            string dvFigura1 = "";
             while (figure >= 1)
             {
-               DvFigura1 = DvFigura1 + Convert.ToString(figure % 2);
+               dvFigura1 = dvFigura1 + Convert.ToString(figure % 2);
                figure = figure / 2;
             }
-            int L = DvFigura1.Length;
+            int L = dvFigura1.Length;
             // Преобразовать строку в символьный массив, затем выполнить реверсирование массива и этот массив преобразовать в строку
-            char[] sDvFigura = DvFigura1.ToCharArray();
+            char[] sDvFigura = dvFigura1.ToCharArray();
             // Символьный массив для перевернутого числа
             char[] sDvFigura1 = new char[L];
             int j = L;
@@ -171,15 +171,15 @@ namespace Functions
                j = j - 1;
                sDvFigura1[j] = sDvFigura[lx];
             }
-            string DvFigura2 = new string(sDvFigura1);
+            string dvFigura2 = new string(sDvFigura1);
 
-            if (DvFigura1 == DvFigura2)
+            if (dvFigura1 == dvFigura2)
             {
-               Console.WriteLine("Десятичное число " + num + " = двоичному числу " + DvFigura2 + " - полиндром");
+               Console.WriteLine("Десятичное число " + num + " = двоичному числу " + dvFigura2 + " - полиндром");
             }
             else
             {
-               Console.WriteLine("Десятичное число " + num + " = двоичному числу " + DvFigura2 + " - не полиндром");
+               Console.WriteLine("Десятичное число " + num + " = двоичному числу " + dvFigura2 + " - не полиндром");
             }
          }
 
@@ -196,7 +196,7 @@ namespace Functions
          // Метод распечатки массивыа выше прописан
          PrintArray(array1);
          Selectionnum(array1);
-         // Метод сортировки элементов массива от мин значения к максимальному по модулю
+         // Метод сортировки элементов массива от минимального значения к максимальному по модулю
          void Selectionnum(int[] arrayN)
          {
             int L = arrayN.Length;
