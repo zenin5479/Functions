@@ -43,7 +43,6 @@ namespace Functions
          }
 
          // Перемешиваем массив для случайного порядка
-
          int rz = 1;
          while (rz < massif.Length)
          {
@@ -54,9 +53,6 @@ namespace Functions
             massif[j] = temp;
             rz++;
          }
-
-
-         
 
          Console.WriteLine("-------------------------------------------");
          Console.WriteLine("Возведение натурального числа А в степень B");
