@@ -34,7 +34,7 @@ namespace Functions
          int size = zero * zero;
          int[] massif = new int[size];
          // Заполняем массив единицами и нулями
-         // ошибка!
+         // Ошибка!
          int rx = 0;
          while (rx < size)
          {
