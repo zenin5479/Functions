@@ -58,17 +58,17 @@ namespace Functions
          Console.WriteLine("Возведение натурального числа А в степень B");
          Console.WriteLine("-------------------------------------------");
          Console.Write("Введите натуральное число А: ");
-         int A = Convert.ToInt32(Console.ReadLine());
+         int a = Convert.ToInt32(Console.ReadLine());
          Console.Write("Введите натуральное число B: ");
          int B = Convert.ToInt32(Console.ReadLine());
          int i = 1;
          int St = 1;
          while (i <= B)
          {
-            St *= A;
+            St *= a;
             i++;
          }
-         Console.WriteLine("Число " + A + " в степени " + B + " = " + St);
+         Console.WriteLine("Число " + a + " в степени " + B + " = " + St);
 
          Console.WriteLine("-----------------------");
          Console.WriteLine("Сумма цифр целого числа");
