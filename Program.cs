@@ -60,15 +60,15 @@ namespace Functions
          Console.Write("Введите натуральное число А: ");
          int a = Convert.ToInt32(Console.ReadLine());
          Console.Write("Введите натуральное число B: ");
-         int B = Convert.ToInt32(Console.ReadLine());
+         int b = Convert.ToInt32(Console.ReadLine());
          int i = 1;
          int St = 1;
-         while (i <= B)
+         while (i <= b)
          {
             St *= a;
             i++;
          }
-         Console.WriteLine("Число " + a + " в степени " + B + " = " + St);
+         Console.WriteLine("Число " + a + " в степени " + b + " = " + St);
 
          Console.WriteLine("-----------------------");
          Console.WriteLine("Сумма цифр целого числа");
