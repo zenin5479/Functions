@@ -43,7 +43,19 @@ namespace Functions
          }
 
          // Перемешиваем массив для случайного порядка
-         for (int rz = 1; rz < massif.Length; rz++)
+
+         int rz = 1;
+         while (rz < massif.Length)
+         {
+
+            
+            
+            
+            rz++;
+         }
+
+
+         for ( )
          {
             int j = сhance.Next(rz + 1);
             // Обмен элементов
