@@ -76,13 +76,13 @@ namespace Functions
 
          Console.WriteLine("Введите число N: ");
          int n = Convert.ToInt32(Console.ReadLine());
-         int Sum = Math.Abs(n);
+         int sum = Math.Abs(n);
          int count = 0;
 
-         while (Sum > 0)
+         while (sum > 0)
          {
-            int num = Sum - Sum / 10 * 10;
-            Sum = Sum / 10;
+            int num = sum - sum / 10 * 10;
+            sum = sum / 10;
             count += num;
          }
 
