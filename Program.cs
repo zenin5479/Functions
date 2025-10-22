@@ -75,8 +75,8 @@ namespace Functions
          Console.WriteLine("-----------------------");
 
          Console.WriteLine("Введите число N: ");
-         int N = Convert.ToInt32(Console.ReadLine());
-         int Sum = Math.Abs(N);
+         int n = Convert.ToInt32(Console.ReadLine());
+         int Sum = Math.Abs(n);
          int count = 0;
 
          while (Sum > 0)
@@ -86,7 +86,7 @@ namespace Functions
             count += num;
          }
 
-         Console.WriteLine("Сумма цифр в числе " + N + " = " + count);
+         Console.WriteLine("Сумма цифр в числе " + n + " = " + count);
 
          Console.WriteLine("--------------------------------------------------------");
          Console.WriteLine("Вывод массива случайных чисел отсортированного по модулю");
