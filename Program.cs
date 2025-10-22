@@ -62,13 +62,13 @@ namespace Functions
          Console.Write("Введите натуральное число B: ");
          int b = Convert.ToInt32(Console.ReadLine());
          int i = 1;
-         int St = 1;
+         int st = 1;
          while (i <= b)
          {
-            St *= a;
+            st *= a;
             i++;
          }
-         Console.WriteLine("Число " + a + " в степени " + b + " = " + St);
+         Console.WriteLine("Число " + a + " в степени " + b + " = " + st);
 
          Console.WriteLine("-----------------------");
          Console.WriteLine("Сумма цифр целого числа");
