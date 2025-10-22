@@ -159,14 +159,14 @@ namespace Functions
                dvFigura1 = dvFigura1 + Convert.ToString(figure % 2);
                figure = figure / 2;
             }
-            int L = dvFigura1.Length;
+            int l = dvFigura1.Length;
             // Преобразовать строку в символьный массив, затем выполнить реверсирование массива и этот массив преобразовать в строку
             char[] sDvFigura = dvFigura1.ToCharArray();
             // Символьный массив для перевернутого числа
-            char[] sDvFigura1 = new char[L];
-            int j = L;
+            char[] sDvFigura1 = new char[l];
+            int j = l;
             // Цикл для переворота числа 
-            for (int lx = 0; lx < L; lx++)
+            for (int lx = 0; lx < l; lx++)
             {
                j = j - 1;
                sDvFigura1[j] = sDvFigura[lx];
