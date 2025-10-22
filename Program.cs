@@ -165,7 +165,8 @@ namespace Functions
             // Символьный массив для перевернутого числа
             char[] sDvFigura1 = new char[L];
             int j = L;
-            for (int lx = 0; lx < L; lx++)                         // цикл для переворота числа 
+            // цикл для переворота числа 
+            for (int lx = 0; lx < L; lx++)
             {
                j = j - 1;
                sDvFigura1[j] = sDvFigura[lx];
@@ -178,7 +179,7 @@ namespace Functions
             }
             else
             {
-               Console.WriteLine("десятичное число " + num + " = двоичному числу " + DvFigura2 + " - не полиндром");
+               Console.WriteLine("Десятичное число " + num + " = двоичному числу " + DvFigura2 + " - не полиндром");
             }
          }
 
@@ -225,7 +226,7 @@ namespace Functions
                }
                if (counter == kolMax)
                {
-                  Console.WriteLine("Максимальное количество элементов массива c знвчением " + arrayN[sr] + " =  " + kolMax);
+                  Console.WriteLine("Максимальное количество элементов массива c значением " + arrayN[sr] + " =  " + kolMax);
                }
             }
          }
