@@ -47,22 +47,16 @@ namespace Functions
          int rz = 1;
          while (rz < massif.Length)
          {
-
-            
-            
-            
-            rz++;
-         }
-
-
-         for ( )
-         {
             int j = сhance.Next(rz + 1);
             // Обмен элементов
             int temp = massif[rz];
             massif[rz] = massif[j];
             massif[j] = temp;
+            rz++;
          }
+
+
+         
 
          Console.WriteLine("-------------------------------------------");
          Console.WriteLine("Возведение натурального числа А в степень B");
