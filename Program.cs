@@ -50,16 +50,12 @@ namespace Functions
             r++;
          }
 
-         // Перемешиваем массив для случайного порядка
-         int rz = 1;
-         while (rz < massif.Length)
+         int t = 0;
+         while (r < size)
          {
-            int j = сhance.Next(rz + 1);
-            // Обмен элементов
-            int temp = massif[rz];
-            massif[rz] = massif[j];
-            massif[j] = temp;
-            rz++;
+            Console.WriteLine(massif[t]);
+            
+            r++;
          }
 
          Console.WriteLine("-------------------------------------------");
