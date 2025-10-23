@@ -199,29 +199,29 @@ namespace Functions
          Console.WriteLine("---------------------------------------------------");
          int lower = 1;
          int high = 99;
-         int[] array1 = new int[100];
+         int[] tract = new int[100];
          // Метод заполнение массива
-         FillArray(array1, lower, high);
+         FillArray(tract, lower, high);
          // Метод распечатки массивыа выше прописан
-         PrintArray(array1);
+         PrintArray(tract);
          // Метод сортировки элементов массива от минимального значения к максимальному по модулю
-         void Selectionnum(int[] arrayN)
+         void Selection(int[] massive)
          {
-            int l = arrayN.Length;
+            int l = massive.Length;
             int kolMax = 1;
-            int numArray = arrayN[0];
+            int numArray = massive[0];
             for (int rd = 0; rd < l - 1; rd++)
             {
                int max = 1;
                for (int j = rd + 1; j < l; j++)
                {
-                  if (arrayN[rd] == (arrayN[j])) max++;
+                  if (massive[rd] == (massive[j])) max++;
                }
 
                if (max > kolMax)
                {
                   kolMax = max;
-                  numArray = arrayN[rd];
+                  numArray = massive[rd];
                }
             }
 
@@ -230,16 +230,16 @@ namespace Functions
                int counter = 1;
                for (int j = sr + 1; j < l; j++)
                {
-                  if (arrayN[sr] == (arrayN[j])) counter++;
+                  if (massive[sr] == (massive[j])) counter++;
                }
                if (counter == kolMax)
                {
-                  Console.WriteLine("Максимальное количество элементов массива c значением " + arrayN[sr] + " =  " + kolMax);
+                  Console.WriteLine("Максимальное количество элементов массива c значением " + massive[sr] + " =  " + kolMax);
                }
             }
          }
-         Selectionnum(array1);
-         
+         Selection(tract);
+
 
          Console.ReadKey();
       }
