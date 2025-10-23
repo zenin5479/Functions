@@ -94,10 +94,11 @@ namespace Functions
             while (l < ar.Length - 1)
             {
                int minPosition = l;
-
-               for (int p = l + 1; p < ar.Length; p++)
+               int p = l + 1;
+               while (p < ar.Length)
                {
                   if (Math.Abs(ar[p]) < Math.Abs(ar[minPosition])) minPosition = p;
+                  p++;
                }
 
                int temporary = ar[l];
