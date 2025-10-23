@@ -207,28 +207,26 @@ namespace Functions
          // Метод сортировки элементов массива от минимального значения к максимальному по модулю
          void Selection(int[] massive)
          {
-            int l = massive.Length;
+            int f = massive.Length;
             int kolMax = 1;
-            int numArray = massive[0];
-            for (int rd = 0; rd < l - 1; rd++)
+            for (int g = 0; g < f - 1; g++)
             {
                int max = 1;
-               for (int j = rd + 1; j < l; j++)
+               for (int j = g + 1; j < f; j++)
                {
-                  if (massive[rd] == (massive[j])) max++;
+                  if (massive[g] == (massive[j])) max++;
                }
 
                if (max > kolMax)
                {
                   kolMax = max;
-                  numArray = massive[rd];
                }
             }
 
-            for (int sr = 0; sr < l - 1; sr++)
+            for (int sr = 0; sr < f - 1; sr++)
             {
                int counter = 1;
-               for (int j = sr + 1; j < l; j++)
+               for (int j = sr + 1; j < f; j++)
                {
                   if (massive[sr] == (massive[j])) counter++;
                }
