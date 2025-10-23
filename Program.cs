@@ -37,17 +37,30 @@ namespace Functions
          int rx = 0;
          while (rx < size)
          {
-            
-            
-            if ()
+            bool divisionzero = size % zero == 0;
+
+
+            if (divisionzero)
             {
-               
+                massif[rx] = 1;
             }
             
             
-            massif[rx] = 1;
+           
             rx += zero;
          }
+
+
+         bool IsDivisible(int number, int divisor)
+         {
+            return number % divisor == 0; // Возвращает true, если делится без остатка
+         }
+
+         // Пример вызова
+         Console.WriteLine(IsDivisible(10, 3)); // False
+         Console.WriteLine(IsDivisible(10, 2)); // True
+
+
 
          // Перемешиваем массив для случайного порядка
          int rz = 1;
