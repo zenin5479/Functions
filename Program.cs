@@ -140,15 +140,15 @@ namespace Functions
                j -= 1;
                charfigura[j] = binaryfigura[y];
             }
-            string dvFigura2 = new string(charfigura);
+            string stringfigura = new string(charfigura);
 
-            if (decimalfigura == dvFigura2)
+            if (decimalfigura == stringfigura)
             {
-               Console.WriteLine("Десятичное число " + num + " = двоичному числу " + dvFigura2 + " - полиндром");
+               Console.WriteLine("Десятичное число " + num + " = двоичному числу " + stringfigura + " - полиндром");
             }
             else
             {
-               Console.WriteLine("Десятичное число " + num + " = двоичному числу " + dvFigura2 + " - не полиндром");
+               Console.WriteLine("Десятичное число " + num + " = двоичному числу " + stringfigura + " - не полиндром");
             }
          }
 
