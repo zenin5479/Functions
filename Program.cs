@@ -135,11 +135,14 @@ namespace Functions
             char[] charfigura = new char[l];
             int j = l;
             // Цикл для переворота числа 
+            
+            
             for (int y = 0; y < l; y++)
             {
                j -= 1;
                charfigura[j] = binaryfigura[y];
             }
+
             string stringfigura = new string(charfigura);
 
             if (decimalfigura == stringfigura)
