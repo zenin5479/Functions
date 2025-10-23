@@ -191,6 +191,7 @@ namespace Functions
             Console.Write("{0} ", massif[t]);
             t++;
          }
+
          Console.WriteLine();
 
          Console.WriteLine("---------------------------------------------------");
