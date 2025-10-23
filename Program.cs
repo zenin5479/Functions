@@ -130,7 +130,7 @@ namespace Functions
             }
             int l = decimalfigura.Length;
             // Преобразовать строку в символьный массив, затем выполнить реверсирование массива и этот массив преобразовать в строку
-            char[] sDvFigura = decimalfigura.ToCharArray();
+            char[] binaryFigura = decimalfigura.ToCharArray();
             // Символьный массив для перевернутого числа
             char[] sDvFigura1 = new char[l];
             int j = l;
@@ -138,7 +138,7 @@ namespace Functions
             for (int lx = 0; lx < l; lx++)
             {
                j = j - 1;
-               sDvFigura1[j] = sDvFigura[lx];
+               sDvFigura1[j] = binaryFigura[lx];
             }
             string dvFigura2 = new string(sDvFigura1);
 
