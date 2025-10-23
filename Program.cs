@@ -78,12 +78,10 @@ namespace Functions
             int k = 0;
             while (k < length)
             {
-               
                Console.Write("{0} ", solid[k]);
                k++;
             }
-            
-            
+
             Console.WriteLine();
          }
 
