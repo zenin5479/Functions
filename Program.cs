@@ -37,20 +37,18 @@ namespace Functions
          Console.WriteLine("-----------------------");
          Console.WriteLine("Сумма цифр целого числа");
          Console.WriteLine("-----------------------");
-
          Console.WriteLine("Введите число N: ");
-         int n = Convert.ToInt32(Console.ReadLine());
-         int sum = Math.Abs(n);
+         int c = Convert.ToInt32(Console.ReadLine());
+         int amount = Math.Abs(c);
          int count = 0;
-
-         while (sum > 0)
+         while (amount > 0)
          {
-            int num = sum - sum / 10 * 10;
-            sum = sum / 10;
+            int num = amount - amount / 10 * 10;
+            amount /= 10;
             count += num;
          }
 
-         Console.WriteLine("Сумма цифр в числе " + n + " = " + count);
+         Console.WriteLine("Сумма цифр в числе " + c + " = " + count);
 
          Console.WriteLine("------------------------------------------------");
          Console.WriteLine("Массив случайных чисел отсортированный по модулю");
