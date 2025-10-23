@@ -53,9 +53,9 @@ namespace Functions
          Console.WriteLine("------------------------------------------------");
          Console.WriteLine("Массив случайных чисел отсортированный по модулю");
          Console.WriteLine("------------------------------------------------");
-         Console.WriteLine("Введите нижнюю границу диапазона случайных чисел: ");
+         Console.Write("Введите нижнюю границу диапазона случайных чисел: ");
          int lowerlimit = Convert.ToInt32(Console.ReadLine());
-         Console.WriteLine("Введите верхнюю границу диапазона случайных чисел: ");
+         Console.Write("Введите верхнюю границу диапазона случайных чисел: ");
          int upperlimit = Convert.ToInt32(Console.ReadLine());
          int[] sortedarray = new int[8];
          // Метод заполнения массива случайными числами
