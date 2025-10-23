@@ -88,22 +88,22 @@ namespace Functions
          Console.WriteLine("Исходный массив");
          PrintArray(sortedarray);
          // Метод сортировки элементов массива от минимального значения к максимальному по модулю
-         void SelectionSort(int[] ar)
+         void SelectionSort(int[] mass)
          {
             int l = 0;
-            while (l < ar.Length - 1)
+            while (l < mass.Length - 1)
             {
                int minPosition = l;
                int p = l + 1;
-               while (p < ar.Length)
+               while (p < mass.Length)
                {
-                  if (Math.Abs(ar[p]) < Math.Abs(ar[minPosition])) minPosition = p;
+                  if (Math.Abs(mass[p]) < Math.Abs(mass[minPosition])) minPosition = p;
                   p++;
                }
 
-               int temporary = ar[l];
-               ar[l] = ar[minPosition];
-               ar[minPosition] = temporary;
+               int temporary = mass[l];
+               mass[l] = mass[minPosition];
+               mass[minPosition] = temporary;
                
                l++;
             }
