@@ -209,6 +209,18 @@ namespace Functions
          {
             int f = massive.Length;
             int maximumlimit = 1;
+            while ()
+            {
+               
+
+
+
+
+
+            }
+            
+            
+            
             for (int g = 0; g < f - 1; g++)
             {
                int upper = 1;
