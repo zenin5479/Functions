@@ -228,25 +228,21 @@ namespace Functions
                g++;
             }
 
-
             int sr = 0;
             while (sr < f - 1)
             {
                int counter = 1;
-               
-               
-               
-               for (int q = sr + 1; q < f; q++)
+               int q = sr + 1;
+               while (q < f)
                {
                   if (massive[sr] == (massive[q])) counter++;
+                  q++;
                }
 
                if (counter == maximumlimit)
                {
                   Console.WriteLine("Максимальное количество элементов массива c значением " + massive[sr] + " =  " + maximumlimit);
                }
-
-
 
                sr++;
             }
