@@ -90,6 +90,8 @@ namespace Functions
          // Метод сортировки элементов массива от минимального значения к максимальному по модулю
          void SelectionSort(int[] ar)
          {
+            
+            
             for (int l = 0; l < ar.Length - 1; l++)
             {
                int minPosition = l;
