@@ -204,7 +204,6 @@ namespace Functions
          FillArray(array1, lower, high);
          // Метод распечатки массивыа выше прописан
          PrintArray(array1);
-         Selectionnum(array1);
          // Метод сортировки элементов массива от минимального значения к максимальному по модулю
          void Selectionnum(int[] arrayN)
          {
@@ -239,6 +238,8 @@ namespace Functions
                }
             }
          }
+         Selectionnum(array1);
+         
 
          Console.ReadKey();
       }
