@@ -54,11 +54,11 @@ namespace Functions
          Console.WriteLine("Массив случайных чисел отсортированный по модулю");
          Console.WriteLine("------------------------------------------------");
          Console.WriteLine("Введите нижнюю границу диапазона случайных чисел: ");
-         int value1 = Convert.ToInt32(Console.ReadLine());
+         int lowerlimit = Convert.ToInt32(Console.ReadLine());
          Console.WriteLine("Введите верхнюю границу диапазона случайных чисел: ");
          int value2 = Convert.ToInt32(Console.ReadLine());
          int[] array = new int[8];
-         MethodFillArray(array, value1, value2);
+         MethodFillArray(array, lowerlimit, value2);
          // Метод заполнения массива случайными числами
          void MethodFillArray(int[] arrays, int value_1, int value_2)
          {
