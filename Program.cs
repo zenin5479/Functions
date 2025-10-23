@@ -38,6 +38,14 @@ namespace Functions
          int rx = 0;
          while (rx < size)
          {
+            
+            
+            if (expr)
+            {
+               
+            }
+            
+            
             massif[rx] = 1;
             rx += zero;
          }
