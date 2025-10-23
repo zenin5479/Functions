@@ -18,8 +18,6 @@ namespace Functions
    {
       static void Main()
       {
-         
-
          Console.WriteLine("-------------------------------------------");
          Console.WriteLine("Возведение натурального числа А в степень B");
          Console.WriteLine("-------------------------------------------");
