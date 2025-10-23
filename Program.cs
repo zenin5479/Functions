@@ -56,18 +56,17 @@ namespace Functions
          Console.WriteLine("Введите нижнюю границу диапазона случайных чисел: ");
          int lowerlimit = Convert.ToInt32(Console.ReadLine());
          Console.WriteLine("Введите верхнюю границу диапазона случайных чисел: ");
-         
          int upperlimit = Convert.ToInt32(Console.ReadLine());
          int[] array = new int[8];
          MethodFillArray(array, lowerlimit, upperlimit);
          // Метод заполнения массива случайными числами
-         void MethodFillArray(int[] arrays, int value_1, int value_2)
+         void MethodFillArray(int[] arrays, int lower, int upper)
          {
-            int index = 0;
-            while (index < arrays.Length)
+            int j = 0;
+            while (j < arrays.Length)
             {
-               arrays[index] = new Random().Next(value_1, value_2);
-               index++;
+               arrays[j] = new Random().Next(lower, upper);
+               j++;
             }
          }
 
