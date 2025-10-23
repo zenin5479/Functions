@@ -208,18 +208,18 @@ namespace Functions
          void Selection(int[] massive)
          {
             int f = massive.Length;
-            int kolMax = 1;
+            int MaximumLimit = 1;
             for (int g = 0; g < f - 1; g++)
             {
-               int max = 1;
+               int Upper = 1;
                for (int s = g + 1; s < f; s++)
                {
-                  if (massive[g] == massive[s]) max++;
+                  if (massive[g] == massive[s]) Upper++;
                }
 
-               if (max > kolMax)
+               if (Upper > MaximumLimit)
                {
-                  kolMax = max;
+                  MaximumLimit = Upper;
                }
             }
 
@@ -230,9 +230,9 @@ namespace Functions
                {
                   if (massive[sr] == (massive[q])) counter++;
                }
-               if (counter == kolMax)
+               if (counter == MaximumLimit)
                {
-                  Console.WriteLine("Максимальное количество элементов массива c значением " + massive[sr] + " =  " + kolMax);
+                  Console.WriteLine("Максимальное количество элементов массива c значением " + massive[sr] + " =  " + MaximumLimit);
                }
             }
          }
