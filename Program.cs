@@ -71,7 +71,6 @@ namespace Functions
 
          FillArray(sortedarray, lowerlimit, upperlimit);
 
-
          // Метод распечатки элементов массива
          void PrintArray(int[] solid)
          {
@@ -88,17 +87,17 @@ namespace Functions
          // Метод сортировки элементов массива от минимального значения к максимальному по модулю
          void SelectionSort(int[] ar)
          {
-            for (int px = 0; px < ar.Length - 1; px++)
+            for (int l = 0; l < ar.Length - 1; l++)
             {
-               int minPosition = px;
+               int minPosition = l;
 
-               for (int j = px + 1; j < ar.Length; j++)
+               for (int p = l + 1; p < ar.Length; p++)
                {
-                  if (Math.Abs(ar[j]) < Math.Abs(ar[minPosition])) minPosition = j;
+                  if (Math.Abs(ar[p]) < Math.Abs(ar[minPosition])) minPosition = p;
                }
 
-               int temporary = ar[px];
-               ar[px] = ar[minPosition];
+               int temporary = ar[l];
+               ar[l] = ar[minPosition];
                ar[minPosition] = temporary;
             }
          }
