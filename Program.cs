@@ -57,15 +57,15 @@ namespace Functions
          int lowerlimit = Convert.ToInt32(Console.ReadLine());
          Console.WriteLine("Введите верхнюю границу диапазона случайных чисел: ");
          int upperlimit = Convert.ToInt32(Console.ReadLine());
-         int[] array = new int[8];
-         MethodFillArray(array, lowerlimit, upperlimit);
+         int[] sortedarray = new int[8];
+         MethodFillArray(sortedarray, lowerlimit, upperlimit);
          // Метод заполнения массива случайными числами
-         void MethodFillArray(int[] arrays, int lower, int upper)
+         void MethodFillArray(int[] sorted, int lower, int upper)
          {
             int j = 0;
-            while (j < arrays.Length)
+            while (j < sorted.Length)
             {
-               arrays[j] = new Random().Next(lower, upper);
+               sorted[j] = new Random().Next(lower, upper);
                j++;
             }
          }
@@ -82,7 +82,7 @@ namespace Functions
          }
 
          Console.WriteLine("Исходный массив");
-         PrintArray(array);
+         PrintArray(sortedarray);
          // Метод сортировки элементов массива от минимального значения к максимальному по модулю
          void SelectionSort(int[] ar)
          {
@@ -101,9 +101,9 @@ namespace Functions
             }
          }
 
-         SelectionSort(array);
+         SelectionSort(sortedarray);
          Console.WriteLine("Отсортированный по модулю от минимального к максимальному");
-         PrintArray(array);
+         PrintArray(sortedarray);
 
          Console.WriteLine("---------------------------------------------------------------------------");
          Console.WriteLine("Проверка натурального десятичного числа на палиндромность в двоичной записи");
