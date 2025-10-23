@@ -104,7 +104,7 @@ namespace Functions
                int temporary = mass[l];
                mass[l] = mass[minPosition];
                mass[minPosition] = temporary;
-               
+
                l++;
             }
          }
@@ -116,18 +116,17 @@ namespace Functions
          Console.WriteLine("---------------------------------------------------------------------------");
          Console.WriteLine("Проверка натурального десятичного числа на палиндромность в двоичной записи");
          Console.WriteLine("---------------------------------------------------------------------------");
-
          Console.Write("Введите десятичное число: ");
          int decimalnumber = Convert.ToInt32(Console.ReadLine());
          // Метод перевода десятичного числа в двоичный
-         void Decimaltobinary(int figure)
+         void DecimalToBinary(int figure)
          {
             int num = figure;
             string dvFigura1 = "";
             while (figure >= 1)
             {
-               dvFigura1 = dvFigura1 + Convert.ToString(figure % 2);
-               figure = figure / 2;
+               dvFigura1 += Convert.ToString(figure % 2);
+               figure /= 2;
             }
             int l = dvFigura1.Length;
             // Преобразовать строку в символьный массив, затем выполнить реверсирование массива и этот массив преобразовать в строку
@@ -153,7 +152,7 @@ namespace Functions
             }
          }
 
-         Decimaltobinary(decimalnumber);
+         DecimalToBinary(decimalnumber);
 
 
          Console.WriteLine("-------------------------------------------");
