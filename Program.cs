@@ -60,7 +60,7 @@ namespace Functions
             Console.Write("{0} ", massif[t]);
             t++;
          }
-         Console.WriteLine("Массив:");
+         Console.WriteLine();
 
          Console.WriteLine("-------------------------------------------");
          Console.WriteLine("Возведение натурального числа А в степень B");
