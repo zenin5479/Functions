@@ -53,13 +53,14 @@ namespace Functions
 
          Console.WriteLine("Размер массива: {0}", size);
          Console.WriteLine("Количество единиц: {0}", zero);
-         Console.Write("Массив:");
+         Console.WriteLine("Массив:");
          int t = 0;
          while (t < size)
          {
             Console.Write("{0} ", massif[t]);
             t++;
          }
+         Console.WriteLine("Массив:");
 
          Console.WriteLine("-------------------------------------------");
          Console.WriteLine("Возведение натурального числа А в степень B");
