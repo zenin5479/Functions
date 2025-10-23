@@ -120,7 +120,10 @@ namespace Functions
          Console.Write("Введите десятичное число: ");
          int number = Convert.ToInt32(Console.ReadLine());
          // Метод перевода десятичного числа в двоичный
-         void Dvcod(int figure)
+
+
+
+         void decimaltobinary(int figure)
          {
             int num = figure;
             string dvFigura1 = "";
@@ -153,7 +156,7 @@ namespace Functions
             }
          }
 
-         Dvcod(number);
+         decimaltobinary(number);
 
 
          Console.WriteLine("-------------------------------------------");
