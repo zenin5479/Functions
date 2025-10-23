@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Channels;
 
 // Функции
 // Задача: Напишите цикл, который принимает на вход два натуральных числа (A и B) и возводит число A в степень B
@@ -50,10 +51,13 @@ namespace Functions
             r++;
          }
 
+         Console.WriteLine("Размер массива: {0}", size);
+         Console.WriteLine("Количество единиц: {0}", zero);
+         Console.WriteLine("Массив:");
          int t = 0;
          while (t < size)
          {
-            Console.WriteLine("Числа равны: {0}", massif[t]);
+            Console.WriteLine("{0} ", massif[t]);
             t++;
          }
 
