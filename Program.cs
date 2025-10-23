@@ -122,15 +122,15 @@ namespace Functions
          void DecimalToBinary(int figure)
          {
             int num = figure;
-            string dvFigura1 = "";
+            string DecimalFigura1 = "";
             while (figure >= 1)
             {
-               dvFigura1 += Convert.ToString(figure % 2);
+               DecimalFigura1 += Convert.ToString(figure % 2);
                figure /= 2;
             }
-            int l = dvFigura1.Length;
+            int l = DecimalFigura1.Length;
             // Преобразовать строку в символьный массив, затем выполнить реверсирование массива и этот массив преобразовать в строку
-            char[] sDvFigura = dvFigura1.ToCharArray();
+            char[] sDvFigura = DecimalFigura1.ToCharArray();
             // Символьный массив для перевернутого числа
             char[] sDvFigura1 = new char[l];
             int j = l;
@@ -142,7 +142,7 @@ namespace Functions
             }
             string dvFigura2 = new string(sDvFigura1);
 
-            if (dvFigura1 == dvFigura2)
+            if (DecimalFigura1 == dvFigura2)
             {
                Console.WriteLine("Десятичное число " + num + " = двоичному числу " + dvFigura2 + " - полиндром");
             }
@@ -153,7 +153,6 @@ namespace Functions
          }
 
          DecimalToBinary(decimalnumber);
-
 
          Console.WriteLine("-------------------------------------------");
          Console.WriteLine("Массив случайного количества нулей и единиц");
