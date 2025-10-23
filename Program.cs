@@ -43,9 +43,9 @@ namespace Functions
          int count = 0;
          while (amount > 0)
          {
-            int num = amount - amount / 10 * 10;
+            int digit = amount - amount / 10 * 10;
             amount /= 10;
-            count += num;
+            count += digit;
          }
 
          Console.WriteLine("Сумма цифр в числе " + c + " = " + count);
