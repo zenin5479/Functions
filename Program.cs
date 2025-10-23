@@ -34,13 +34,12 @@ namespace Functions
          int size = zero * zero;
          int[] massif = new int[size];
          // Заполняем массив единицами и нулями
-         // Ошибка!
          int rx = 0;
          while (rx < size)
          {
             
             
-            if (expr)
+            if ()
             {
                
             }
