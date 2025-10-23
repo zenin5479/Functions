@@ -216,7 +216,11 @@ namespace Functions
                int s = g + 1;
                while (s < f)
                {
-                  if (massive[g] == massive[s]) upper++;
+                  if (massive[g] == massive[s])
+                  {
+                     upper++;
+                  }
+
                   s++;
                }
 
@@ -235,7 +239,11 @@ namespace Functions
                int w = q + 1;
                while (w < f)
                {
-                  if (massive[q] == (massive[w])) register++;
+                  if (massive[q] == (massive[w]))
+                  {
+                     register++;
+                  }
+
                   w++;
                }
 
