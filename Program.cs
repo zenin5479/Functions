@@ -43,18 +43,9 @@ namespace Functions
                 massif[rx] = 1;
             }
 
-            rx += zero;
+            rx++;
          }
 
-
-         bool IsDivisible(int number, int divisor)
-         {
-            return number % divisor == 0; // Возвращает true, если делится без остатка
-         }
-
-         // Пример вызова
-         Console.WriteLine(IsDivisible(10, 3)); // False
-         Console.WriteLine(IsDivisible(10, 2)); // True
 
 
 
