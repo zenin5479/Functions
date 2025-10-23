@@ -73,12 +73,12 @@ namespace Functions
 
 
          // Метод распечатки элементов массива
-         void PrintArray(int[] arra)
+         void PrintArray(int[] solid)
          {
-            int length = arra.Length;
-            for (int rv = 0; rv < length; rv++)
+            int length = solid.Length;
+            for (int k = 0; k < length; k++)
             {
-               Console.Write($"{arra[rv]}  ");
+               Console.Write("{0} ", solid[k]);
             }
             Console.WriteLine();
          }
