@@ -236,8 +236,8 @@ namespace Functions
                }
             }
          }
-         Selection(tract);
 
+         Selection(tract);
 
          Console.ReadKey();
       }
