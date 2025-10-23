@@ -212,9 +212,9 @@ namespace Functions
             for (int g = 0; g < f - 1; g++)
             {
                int max = 1;
-               for (int j = g + 1; j < f; j++)
+               for (int s = g + 1; s < f; s++)
                {
-                  if (massive[g] == (massive[j])) max++;
+                  if (massive[g] == massive[s]) max++;
                }
 
                if (max > kolMax)
@@ -226,9 +226,9 @@ namespace Functions
             for (int sr = 0; sr < f - 1; sr++)
             {
                int counter = 1;
-               for (int j = sr + 1; j < f; j++)
+               for (int q = sr + 1; q < f; q++)
                {
-                  if (massive[sr] == (massive[j])) counter++;
+                  if (massive[sr] == (massive[q])) counter++;
                }
                if (counter == kolMax)
                {
