@@ -229,17 +229,26 @@ namespace Functions
             }
 
 
-            for (int sr = 0; sr < f - 1; sr++)
+            int sr = 0;
+            while (sr < f - 1)
             {
                int counter = 1;
+               
+               
+               
                for (int q = sr + 1; q < f; q++)
                {
                   if (massive[sr] == (massive[q])) counter++;
                }
+
                if (counter == maximumlimit)
                {
                   Console.WriteLine("Максимальное количество элементов массива c значением " + massive[sr] + " =  " + maximumlimit);
                }
+
+
+
+               sr++;
             }
          }
 
