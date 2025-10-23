@@ -70,9 +70,9 @@ namespace Functions
          }
          Console.WriteLine("Число " + a + " в степени " + b + " = " + st);
 
-         Console.WriteLine("-----------------------");
-         Console.WriteLine("Сумма цифр целого числа");
-         Console.WriteLine("-----------------------");
+         Console.WriteLine("-------------------------");
+         Console.WriteLine("Сумма цифр целого числа: ");
+         Console.WriteLine("-------------------------");
 
          Console.WriteLine("Введите число N: ");
          int n = Convert.ToInt32(Console.ReadLine());
