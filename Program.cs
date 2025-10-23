@@ -128,6 +128,7 @@ namespace Functions
                decimalfigura += Convert.ToString(figure % 2);
                figure /= 2;
             }
+
             int l = decimalfigura.Length;
             // Преобразовать строку в символьный массив, затем выполнить реверсирование массива и этот массив преобразовать в строку
             char[] binaryfigura = decimalfigura.ToCharArray();
@@ -144,14 +145,13 @@ namespace Functions
             }
 
             string stringfigura = new string(charfigura);
-
             if (decimalfigura == stringfigura)
             {
-               Console.WriteLine("Десятичное число " + num + " = двоичному числу " + stringfigura + " - полиндром");
+               Console.WriteLine("Десятичное число " + num + " = двоичному числу" + stringfigura + " - полиндром");
             }
             else
             {
-               Console.WriteLine("Десятичное число " + num + " = двоичному числу " + stringfigura + " - не полиндром");
+               Console.WriteLine("Десятичное число " + num + " = двоичному числу" + stringfigura + " - не полиндром");
             }
          }
 
