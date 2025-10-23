@@ -58,9 +58,8 @@ namespace Functions
          Console.WriteLine("Введите верхнюю границу диапазона случайных чисел: ");
          int upperlimit = Convert.ToInt32(Console.ReadLine());
          int[] sortedarray = new int[8];
-         MethodFillArray(sortedarray, lowerlimit, upperlimit);
          // Метод заполнения массива случайными числами
-         void MethodFillArray(int[] sorted, int lower, int upper)
+         void FillArray(int[] sorted, int lower, int upper)
          {
             int j = 0;
             while (j < sorted.Length)
@@ -69,6 +68,9 @@ namespace Functions
                j++;
             }
          }
+
+         FillArray(sortedarray, lowerlimit, upperlimit);
+
 
          // Метод распечатки элементов массива
          void PrintArray(int[] arra)
@@ -191,7 +193,7 @@ namespace Functions
          int high = 99;
          int[] array1 = new int[100];
          // Метод заполнение массива
-         MethodFillArray(array1, lower, high);
+         FillArray(array1, lower, high);
          // Метод распечатки массивыа выше прописан
          PrintArray(array1);
          Selectionnum(array1);
