@@ -51,11 +51,10 @@ namespace Functions
          }
 
          int t = 0;
-         while (r < size)
+         while (t < size)
          {
-            Console.WriteLine(massif[t]);
-            
-            r++;
+            Console.WriteLine("Числа равны: {0}", massif[t]);
+            t++;
          }
 
          Console.WriteLine("-------------------------------------------");
