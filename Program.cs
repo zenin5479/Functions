@@ -70,9 +70,9 @@ namespace Functions
          }
          Console.WriteLine("Число " + a + " в степени " + b + " = " + st);
 
-         Console.WriteLine("-------------------------");
-         Console.WriteLine("Сумма цифр целого числа: ");
-         Console.WriteLine("-------------------------");
+         Console.WriteLine("-----------------------");
+         Console.WriteLine("Сумма цифр целого числа");
+         Console.WriteLine("-----------------------");
 
          Console.WriteLine("Введите число N: ");
          int n = Convert.ToInt32(Console.ReadLine());
@@ -88,8 +88,8 @@ namespace Functions
 
          Console.WriteLine("Сумма цифр в числе " + n + " = " + count);
 
-         Console.WriteLine("--------------------------------------------------------");
-         Console.WriteLine("Вывод массива случайных чисел отсортированного по модулю");
+         Console.WriteLine("------------------------------------------------");
+         Console.WriteLine("Массив случайных чисел отсортированный по модулю");
          Console.WriteLine("--------------------------------------------------------");
          Console.WriteLine("Введите нижнюю границу диапозона случайных чисел: ");
          int value1 = Convert.ToInt32(Console.ReadLine());
