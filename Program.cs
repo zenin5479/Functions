@@ -42,6 +42,10 @@ namespace Functions
             {
                 massif[rx] = 1;
             }
+            else
+            {
+               massif[rx] = 0;
+            }
 
             rx++;
          }
