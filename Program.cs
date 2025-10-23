@@ -188,11 +188,11 @@ namespace Functions
          Console.WriteLine("---------------------------------------------------");
          Console.WriteLine("Определение часто встречающихся элементов в массиве");
          Console.WriteLine("---------------------------------------------------");
-         lowerlimit = 1;
-         value2 = 99;
+         int lower = 1;
+         int high = 99;
          int[] array1 = new int[100];
          // Метод заполнение массива
-         MethodFillArray(array1, lowerlimit, value2);
+         MethodFillArray(array1, lower, high);
          // Метод распечатки массивыа выше прописан
          PrintArray(array1);
          Selectionnum(array1);
