@@ -231,15 +231,15 @@ namespace Functions
             int q = 0;
             while (q < f - 1)
             {
-               int counter = 1;
+               int register = 1;
                int w = q + 1;
                while (w < f)
                {
-                  if (massive[q] == (massive[w])) counter++;
+                  if (massive[q] == (massive[w])) register++;
                   w++;
                }
 
-               if (counter == limit)
+               if (register == limit)
                {
                   Console.WriteLine("Максимальное количество элементов массива c значением " + massive[q] + " =  " + limit);
                }
