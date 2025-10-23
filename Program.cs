@@ -91,9 +91,9 @@ namespace Functions
          Console.WriteLine("------------------------------------------------");
          Console.WriteLine("Массив случайных чисел отсортированный по модулю");
          Console.WriteLine("------------------------------------------------");
-         Console.WriteLine("Введите нижнюю границу диапозона случайных чисел: ");
+         Console.WriteLine("Введите нижнюю границу диапазона случайных чисел: ");
          int value1 = Convert.ToInt32(Console.ReadLine());
-         Console.WriteLine("Введите верхнюю границу диапозона случайных чисел: ");
+         Console.WriteLine("Введите верхнюю границу диапазона случайных чисел: ");
          int value2 = Convert.ToInt32(Console.ReadLine());
          int[] array = new int[8];
          MethodFillArray(array, value1, value2);
