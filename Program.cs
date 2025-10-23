@@ -249,7 +249,7 @@ namespace Functions
 
                if (register == limit)
                {
-                  Console.WriteLine("Максимальное количество элементов массива c значением " + massive[q] + " =  " + limit);
+                  Console.WriteLine("Максимальное количество элементов массива c значением " + massive[q] + " = " + limit);
                }
 
                q++;
