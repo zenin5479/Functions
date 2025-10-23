@@ -26,13 +26,13 @@ namespace Functions
          Console.Write("Введите натуральное число B: ");
          int b = Convert.ToInt32(Console.ReadLine());
          int i = 1;
-         int st = 1;
+         int degree = 1;
          while (i <= b)
          {
-            st *= a;
+            degree *= a;
             i++;
          }
-         Console.WriteLine("Число " + a + " в степени " + b + " = " + st);
+         Console.WriteLine("Число " + a + " в степени " + b + " = " + degree);
 
          Console.WriteLine("-----------------------");
          Console.WriteLine("Сумма цифр целого числа");
