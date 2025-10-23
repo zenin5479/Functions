@@ -75,12 +75,15 @@ namespace Functions
          void PrintArray(int[] solid)
          {
             int length = solid.Length;
-            
-            
-            for (int k = 0; k < length; k++)
+            int k = 0;
+            while (k < length)
             {
+               
                Console.Write("{0} ", solid[k]);
+               k++;
             }
+            
+            
             Console.WriteLine();
          }
 
