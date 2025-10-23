@@ -18,41 +18,7 @@ namespace Functions
    {
       static void Main()
       {
-         Console.WriteLine("-------------------------------------------");
-         Console.WriteLine("Массив случайного количества нулей и единиц");
-         Console.WriteLine("-------------------------------------------");
-         Random сhance = new Random();
-         int zero = сhance.Next(1, 100);
-         // Размер массива
-         int size = zero * zero;
-         int[] massif = new int[size];
-         // Заполняем массив единицами и нулями
-         int r = 0;
-         while (r < size)
-         {
-            bool divisionzero = r % zero == 0;
-            if (divisionzero)
-            {
-               massif[r] = 1;
-            }
-            else
-            {
-               massif[r] = 0;
-            }
-
-            r++;
-         }
-
-         Console.WriteLine("Размер массива: {0}", size);
-         Console.WriteLine("Количество единиц: {0}", zero);
-         Console.WriteLine("Массив:");
-         int t = 0;
-         while (t < size)
-         {
-            Console.Write("{0} ", massif[t]);
-            t++;
-         }
-         Console.WriteLine();
+         
 
          Console.WriteLine("-------------------------------------------");
          Console.WriteLine("Возведение натурального числа А в степень B");
@@ -184,6 +150,43 @@ namespace Functions
          }
 
          Dvcod(number);
+
+
+         Console.WriteLine("-------------------------------------------");
+         Console.WriteLine("Массив случайного количества нулей и единиц");
+         Console.WriteLine("-------------------------------------------");
+         Random сhance = new Random();
+         int zero = сhance.Next(1, 100);
+         // Размер массива
+         int size = zero * zero;
+         int[] massif = new int[size];
+         // Заполняем массив единицами и нулями
+         int r = 0;
+         while (r < size)
+         {
+            bool divisionzero = r % zero == 0;
+            if (divisionzero)
+            {
+               massif[r] = 1;
+            }
+            else
+            {
+               massif[r] = 0;
+            }
+
+            r++;
+         }
+
+         Console.WriteLine("Размер массива: {0}", size);
+         Console.WriteLine("Количество единиц: {0}", zero);
+         Console.WriteLine("Массив:");
+         int t = 0;
+         while (t < size)
+         {
+            Console.Write("{0} ", massif[t]);
+            t++;
+         }
+         Console.WriteLine();
 
          Console.WriteLine("---------------------------------------------------");
          Console.WriteLine("Определение часто встречающихся элементов в массиве");
