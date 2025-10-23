@@ -37,7 +37,7 @@ namespace Functions
          int rx = 0;
          while (rx < size)
          {
-            bool divisionzero = size % zero == 0;
+            bool divisionzero = rx % zero == 0;
             if (divisionzero)
             {
                 massif[rx] = 1;
