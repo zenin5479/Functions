@@ -34,20 +34,20 @@ namespace Functions
          int size = zero * zero;
          int[] massif = new int[size];
          // Заполняем массив единицами и нулями
-         int rx = 0;
-         while (rx < size)
+         int r = 0;
+         while (r < size)
          {
-            bool divisionzero = rx % zero == 0;
+            bool divisionzero = r % zero == 0;
             if (divisionzero)
             {
-               massif[rx] = 1;
+               massif[r] = 1;
             }
             else
             {
-               massif[rx] = 0;
+               massif[r] = 0;
             }
 
-            rx++;
+            r++;
          }
 
          // Перемешиваем массив для случайного порядка
