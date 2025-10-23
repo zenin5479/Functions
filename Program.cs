@@ -46,9 +46,6 @@ namespace Functions
             rx++;
          }
 
-
-
-
          // Перемешиваем массив для случайного порядка
          int rz = 1;
          while (rz < massif.Length)
