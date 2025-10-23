@@ -197,18 +197,18 @@ namespace Functions
          Console.WriteLine("---------------------------------------------------");
          Console.WriteLine("Определение часто встречающихся элементов в массиве");
          Console.WriteLine("---------------------------------------------------");
-         int lower = 1;
+         int low = 1;
          int high = 99;
          int[] tract = new int[100];
          // Метод заполнение массива
-         FillArray(tract, lower, high);
+         FillArray(tract, low, high);
          // Метод распечатки массивыа выше прописан
          PrintArray(tract);
          // Метод сортировки элементов массива от минимального значения к максимальному по модулю
          void Selection(int[] massive)
          {
             int f = massive.Length;
-            int maximumlimit = 1;
+            int limit = 1;
             int g = 0;
             while (g < f - 1)
             {
@@ -220,31 +220,31 @@ namespace Functions
                   s++;
                }
 
-               if (upper > maximumlimit)
+               if (upper > limit)
                {
-                  maximumlimit = upper;
+                  limit = upper;
                }
 
                g++;
             }
 
-            int sr = 0;
-            while (sr < f - 1)
+            int q = 0;
+            while (q < f - 1)
             {
                int counter = 1;
-               int q = sr + 1;
-               while (q < f)
+               int w = q + 1;
+               while (w < f)
                {
-                  if (massive[sr] == (massive[q])) counter++;
-                  q++;
+                  if (massive[q] == (massive[w])) counter++;
+                  w++;
                }
 
-               if (counter == maximumlimit)
+               if (counter == limit)
                {
-                  Console.WriteLine("Максимальное количество элементов массива c значением " + massive[sr] + " =  " + maximumlimit);
+                  Console.WriteLine("Максимальное количество элементов массива c значением " + massive[q] + " =  " + limit);
                }
 
-               sr++;
+               q++;
             }
          }
 
