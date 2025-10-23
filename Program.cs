@@ -53,11 +53,11 @@ namespace Functions
 
          Console.WriteLine("Размер массива: {0}", size);
          Console.WriteLine("Количество единиц: {0}", zero);
-         Console.WriteLine("Массив:");
+         Console.Write("Массив:");
          int t = 0;
          while (t < size)
          {
-            Console.WriteLine("{0} ", massif[t]);
+            Console.Write("{0} ", massif[t]);
             t++;
          }
 
