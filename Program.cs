@@ -38,15 +38,11 @@ namespace Functions
          while (rx < size)
          {
             bool divisionzero = size % zero == 0;
-
-
             if (divisionzero)
             {
                 massif[rx] = 1;
             }
-            
-            
-           
+
             rx += zero;
          }
 
