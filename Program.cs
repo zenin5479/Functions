@@ -54,11 +54,12 @@ namespace Functions
          Console.WriteLine("Массив случайных чисел отсортированный по модулю");
          Console.WriteLine("------------------------------------------------");
          Console.WriteLine("Введите нижнюю границу диапазона случайных чисел: ");
-         int value1 = Convert.ToInt32(Console.ReadLine());
+         int lowerlimit = Convert.ToInt32(Console.ReadLine());
          Console.WriteLine("Введите верхнюю границу диапазона случайных чисел: ");
-         int value2 = Convert.ToInt32(Console.ReadLine());
+         
+         int upperlimit = Convert.ToInt32(Console.ReadLine());
          int[] array = new int[8];
-         MethodFillArray(array, value1, value2);
+         MethodFillArray(array, lowerlimit, upperlimit);
          // Метод заполнения массива случайными числами
          void MethodFillArray(int[] arrays, int value_1, int value_2)
          {
@@ -187,11 +188,11 @@ namespace Functions
          Console.WriteLine("---------------------------------------------------");
          Console.WriteLine("Определение часто встречающихся элементов в массиве");
          Console.WriteLine("---------------------------------------------------");
-         value1 = 1;
+         lowerlimit = 1;
          value2 = 99;
          int[] array1 = new int[100];
          // Метод заполнение массива
-         MethodFillArray(array1, value1, value2);
+         MethodFillArray(array1, lowerlimit, value2);
          // Метод распечатки массивыа выше прописан
          PrintArray(array1);
          Selectionnum(array1);
