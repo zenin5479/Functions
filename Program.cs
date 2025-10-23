@@ -29,7 +29,7 @@ namespace Functions
          // Размер массива должен совпадать с квадратом количества единиц в нём
          // Количество единиц (от 1 до 100)
          Random сhance = new Random();
-         int zero = сhance.Next(3, 10);
+         int zero = сhance.Next(1, 100);
          // Размер массива
          int size = zero * zero;
          int[] massif = new int[size];
@@ -40,7 +40,7 @@ namespace Functions
             bool divisionzero = rx % zero == 0;
             if (divisionzero)
             {
-                massif[rx] = 1;
+               massif[rx] = 1;
             }
             else
             {
