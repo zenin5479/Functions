@@ -121,7 +121,7 @@ namespace Functions
          // Метод перевода десятичного числа в двоичный
          void DecimalToBinary(int figure)
          {
-            int num = figure;
+            int numeral = figure;
             string decimalfigura = "";
             while (figure >= 1)
             {
@@ -147,11 +147,11 @@ namespace Functions
             string stringfigura = new string(charfigura);
             if (decimalfigura == stringfigura)
             {
-               Console.WriteLine("Десятичное число " + num + " = двоичному числу " + stringfigura + " - полиндром");
+               Console.WriteLine("Десятичное число " + numeral + " = двоичному числу " + stringfigura + " - полиндром");
             }
             else
             {
-               Console.WriteLine("Десятичное число " + num + " = двоичному числу " + stringfigura + " - не полиндром");
+               Console.WriteLine("Десятичное число " + numeral + " = двоичному числу " + stringfigura + " - не полиндром");
             }
          }
 
