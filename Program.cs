@@ -151,7 +151,7 @@ namespace Functions
             }
             else
             {
-               Console.WriteLine("Десятичное число " + num + " = двоичному числу" + stringfigura + " - не полиндром");
+               Console.WriteLine("Десятичное число " + num + " = двоичному числу " + stringfigura + " - не полиндром");
             }
          }
 
