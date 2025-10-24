@@ -147,7 +147,7 @@ namespace Functions
             string stringfigura = new string(charfigura);
             if (decimalfigura == stringfigura)
             {
-               Console.WriteLine("Десятичное число " + num + " = двоичному числу" + stringfigura + " - полиндром");
+               Console.WriteLine("Десятичное число " + num + " = двоичному числу " + stringfigura + " - полиндром");
             }
             else
             {
